@@ -1,0 +1,136 @@
+# SOC Investigation Report: Suspected Phishing Email
+
+## 1. Incident Summary
+
+**Incident Type:** Suspected Phishing
+**Investigation Level:** SOC Analyst Level 1
+**Affected User:** John Doe
+**Impersonated Organisation:** Microsoft
+**Investigation Status:** Preliminary Investigation
+**Classification:** Suspected Malicious Email
+
+## 2. Incident Description
+
+An email was presented to the user, John Doe, claiming that his Microsoft 365 account would be suspended unless he verified his login credentials.
+
+The email contained urgent language and a suspicious verification link. The sender used a domain resembling Microsoft's brand name.
+
+The objective of this investigation was to identify potential phishing indicators and assess the security risk associated with the email.
+
+## 3. Evidence Collected
+
+The following indicators were identified from the supplied email sample:
+
+| Evidence                  | Observed Information                                                                  |
+| ------------------------- | ------------------------------------------------------------------------------------- |
+| Sender Address            | [security-alert@micros0ft-security.com](mailto:security-alert@micros0ft-security.com) |
+| Sender Domain             | micros0ft-security.com                                                                |
+| Subject                   | URGENT: Your Microsoft 365 Account Will Be Suspended                                  |
+| Impersonated Organisation | Microsoft                                                                             |
+| Suspicious URL            | micros0ft-security.example/verify                                                     |
+| Recipient                 | John Doe                                                                              |
+
+## 4. Technical Analysis
+
+### 4.1 Sender and Domain Analysis
+
+The sender domain contains a character substitution, using the number zero (0) in place of the letter 'o' in Microsoft.
+
+This resembles a domain impersonation technique commonly associated with phishing attacks.
+
+### 4.2 Email Content Analysis
+
+The email uses urgent language, warning the recipient that their Microsoft 365 account will be suspended.
+
+This creates pressure on the recipient to act quickly without properly examining the legitimacy of the message.
+
+### 4.3 URL Analysis
+
+The email contains a suspicious verification URL:
+
+micros0ft-security.example/verify
+
+The URL uses a domain that resembles Microsoft's branding.
+
+The supplied URL uses the reserved `.example` top-level domain. Therefore, it is treated as a training indicator and has not been established as a live malicious website.
+
+### 4.4 Email Authentication
+
+SPF, DKIM and DMARC results were not available in the supplied evidence.
+
+Further examination of the original email headers would be required to establish whether the message passed or failed these authentication checks.
+
+## 5. Indicators of Compromise (IOCs)
+
+| IOC Type      | Indicator                                                                             | Observation                      |
+| ------------- | ------------------------------------------------------------------------------------- | -------------------------------- |
+| Email Address | [security-alert@micros0ft-security.com](mailto:security-alert@micros0ft-security.com) | Suspicious sender                |
+| Domain        | micros0ft-security.com                                                                | Possible brand impersonation     |
+| URL           | micros0ft-security.example/verify                                                     | Suspicious verification link     |
+| Subject       | URGENT: Your Microsoft 365 Account Will Be Suspended                                  | Urgency-based social engineering |
+
+These indicators require further validation before being treated as confirmed malicious infrastructure.
+
+## 6. Investigation Findings
+
+The investigation identified the following suspicious characteristics:
+
+1. Possible impersonation of Microsoft.
+2. Character substitution in the sender domain.
+3. Urgency-based language intended to pressure the recipient.
+4. A suspicious link requesting credential verification.
+5. Potential credential-harvesting activity.
+
+The combined indicators are consistent with a suspected phishing attempt.
+
+However, the available evidence does not establish whether the recipient clicked the link or whether credentials were compromised.
+
+## 7. Risk Assessment
+
+**Potential Risk: High if credentials are submitted.**
+
+Possible consequences include:
+
+* Credential theft.
+* Unauthorised account access.
+* Microsoft 365 account compromise.
+* Exposure of organisational information.
+* Further attacks using a compromised account.
+
+This is a potential impact assessment, not confirmation that compromise occurred.
+
+## 8. Recommended Response
+
+As a SOC Analyst Level 1:
+
+1. Preserve the suspicious email for investigation.
+2. Advise the recipient not to click the link or provide credentials.
+3. Report and escalate the suspicious email according to the organisation's incident response procedure.
+4. Recommend quarantining or blocking the email where authorised.
+5. Request examination of the original email headers.
+6. Determine whether other employees received similar messages.
+7. If credentials were submitted, escalate immediately for account containment and credential reset procedures.
+
+## 9. Investigation Limitations
+
+The following evidence was unavailable during this preliminary investigation:
+
+* Original email headers.
+* SPF, DKIM and DMARC authentication results.
+* URL reputation results.
+* Email gateway logs.
+* Confirmation of whether the recipient clicked the link.
+* Confirmation of credential submission or account compromise.
+
+These limitations prevent a definitive technical determination.
+
+## 10. Conclusion
+
+Based on the available evidence, the email exhibits multiple characteristics associated with phishing, particularly domain impersonation, urgency-based social engineering and a suspicious credential-verification link.
+
+The appropriate preliminary classification is suspected phishing.
+
+Further technical investigation is recommended to establish the sender's authenticity, validate the indicators and determine whether the recipient's account was exposed.
+
+**Investigation Role:** SOC Analyst Level 1
+**Project Type:** Practical Cybersecurity Training Investigation
