@@ -27,7 +27,7 @@ The following indicators were identified from the supplied email sample:
 | Sender Domain             | micros0ft-security.com                                                                |
 | Subject                   | URGENT: Your Microsoft 365 Account Will Be Suspended                                  |
 | Impersonated Organisation | Microsoft                                                                             |
-| Suspicious URL            | micros0ft-security.example/verify                                                     |
+| Suspicious URL            | https://micros0ft-security.example/verify                                                     |
 | Recipient                 | John Doe                                                                              |
 
 ## 4. Technical Analysis
@@ -48,7 +48,7 @@ This creates pressure on the recipient to act quickly without properly examining
 
 The email contains a suspicious verification URL:
 
-micros0ft-security.example/verify
+https://micros0ft-security.example/verify
 
 The URL uses a domain that resembles Microsoft's branding.
 
@@ -60,13 +60,13 @@ SPF, DKIM and DMARC results were not available in the supplied evidence.
 
 Further examination of the original email headers would be required to establish whether the message passed or failed these authentication checks.
 
-## 5. Indicators of Compromise (IOCs)
+## 5. Potential Indicators of Compromise (IOCs)
 
 | IOC Type      | Indicator                                                                             | Observation                      |
 | ------------- | ------------------------------------------------------------------------------------- | -------------------------------- |
 | Email Address | [security-alert@micros0ft-security.com](mailto:security-alert@micros0ft-security.com) | Suspicious sender                |
 | Domain        | micros0ft-security.com                                                                | Possible brand impersonation     |
-| URL           | micros0ft-security.example/verify                                                     | Suspicious verification link     |
+| URL           | https://micros0ft-security.example/verify                                                     | Suspicious verification link     |
 | Subject       | URGENT: Your Microsoft 365 Account Will Be Suspended                                  | Urgency-based social engineering |
 
 These indicators require further validation before being treated as confirmed malicious infrastructure.
