@@ -19,6 +19,8 @@ It establishes an organised record of available evidence, outstanding technical 
 | EVD-007     | DKIM authentication results  | Not verified for original phishing email; PASS in separate training exercise |
 | EVD-008     | DMARC authentication results | Not verified for original phishing email; PASS in separate training exercise |
 | EVD-009     | URL reputation analysis      | Not performed; simulated `.example` domain                                   |
+| Evidence ID | Evidence Description                    | Status                                                             
+| EVD-010     | Reconstructed phishing email screenshots | Captured and uploaded; training reconstruction, not original email 
 
 
 ## 3. Evidence Sources
