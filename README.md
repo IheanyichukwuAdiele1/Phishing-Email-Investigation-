@@ -37,7 +37,7 @@ The SOC Analyst is required to investigate the email and determine whether it ex
 
 | Indicator          | Observation                                                                           |
 | ------------------ | ------------------------------------------------------------------------------------- |
-| Sender             | [security-alert@micros0ft-security.com](mailto:security-alert@micros0ft-security.com) |
+| Sender             | security-alert@micros0ft-security.com                                                 |
 | Sender Domain      | micros0ft-security.com                                                                |
 | Subject            | URGENT: Your Microsoft 365 Account Will Be Suspended                                  |
 | Impersonated Brand | Microsoft                                                                             |
@@ -48,18 +48,22 @@ The SOC Analyst is required to investigate the email and determine whether it ex
 
 The investigation covers the following areas:
 
+## 5. Investigation Methodology
+
+The investigation covers the following areas:
+
 1. Sender and domain analysis.
-2. 2. Email authentication training exercise (separate from the original phishing sample).
+2. Email authentication training exercise (separate from the original phishing sample).
 3. Identification of brand impersonation.
 4. Suspicious URL examination.
 5. Identification of Indicators of Compromise.
 6. Threat assessment and incident classification.
 7. Incident response recommendations.
 
+
 ## 6. Preliminary Findings
 
 The email exhibits several characteristics associated with phishing:
-
 * A sender domain resembling Microsoft's brand name.
 * Character substitution in the domain name.
 * Urgent language intended to pressure the recipient.
@@ -68,8 +72,7 @@ The email exhibits several characteristics associated with phishing:
 
 These indicators suggest a potential credential-harvesting attempt.
 
-Further technical validation of email authentication results and URL behaviour is required before making a complete determination.
-
+Further technical validation would require the original email headers and, if an operational URL becomes available, appropriate URL analysis. The current evidence supports a preliminary classification of suspected phishing, not confirmed malicious activity.
 ## 7. Potential Security Risks
 
 * Unauthorised access to corporate accounts.
