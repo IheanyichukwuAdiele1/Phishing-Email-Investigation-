@@ -27,7 +27,6 @@ It establishes an organised record of available evidence, outstanding technical 
 ## 3. Evidence Sources
 
 The initial indicators were obtained from the phishing email sample supplied for this practical investigation.
-
 The original raw email headers and independent technical validation results were not available at the time of documentation.
 
 A separate Gmail training email was examined using the Show Original feature. SPF, DKIM and DMARC returned PASS. These results are not associated with the original phishing email.
