@@ -91,10 +91,25 @@ Further technical validation of email authentication results and URL behaviour i
 * SOC Level 1 investigation and escalation.
 
 ## 10. Project Status
+**Status: Documentation and Training Evidence Completed — Technical Validation Limited**
 
-Investigation documentation and technical evidence are being developed.
+The phishing email investigation has been documented as part of a practical SOC Analyst Level 1 portfolio.
 
-This project is part of a practical SOC Analyst Level 1 portfolio.
+Completed activities include:
+
+* Phishing email content and sender analysis.
+* Identification of suspicious indicators of compromise (IOCs).
+* URL structure and impersonation assessment.
+* Email authentication training exercise (separate from the original phishing sample).
+* Evidence inventory and investigation documentation.
+* Reconstructed training screenshots.
+
+**Investigation Limitations:**
+
+The original raw email headers were not available. SPF, DKIM and DMARC results for the original phishing email remain unverified. The `.example` URL is reserved for training and was not subjected to live reputation analysis.
+
+This project demonstrates practical SOC Analyst Level 1 skills in phishing analysis, evidence documentation, threat identification and incident assessment.
+
 
 ---
 
