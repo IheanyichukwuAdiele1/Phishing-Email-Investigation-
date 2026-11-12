@@ -12,7 +12,7 @@ The indicators are documented to support threat identification, investigation an
 | --- | ------------- | ------------------------------------------------------------------------------------- | --------------------------------------- |
 | 1   | Email Address | [security-alert@micros0ft-security.com](mailto:security-alert@micros0ft-security.com) | Suspicious sender address               |
 | 2   | Domain        | micros0ft-security.com                                                                | Potential Microsoft impersonation       |
-| 3   | URL           | micros0ft-security.example/verify                                                     | Suspicious credential verification link |
+| 3   | URL           | https://micros0ft-security.example/verify                                                     | Suspicious credential verification link |
 | 4   | Email Subject | URGENT: Your Microsoft 365 Account Will Be Suspended                                  | Urgency-based social engineering        |
 
 ## 3. IOC Analysis
@@ -66,7 +66,7 @@ Potential consequences include:
 | -------------- | ----------------------------------------------- |
 | Sender address | Observed; authenticity not verified             |
 | Sender domain  | Observed; maliciousness not confirmed           |
-| Suspicious URL | Observed; live threat not established           |
+| Suspicious URL | Observed in training sample; .example domain is reserved; no live reputation assessment performed           |
 | Email subject  | Observed; suspicious characteristics identified |
 
 ## 7. Conclusion
