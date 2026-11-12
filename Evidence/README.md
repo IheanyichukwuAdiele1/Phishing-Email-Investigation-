@@ -15,8 +15,6 @@ It establishes an organised record of available evidence, outstanding technical 
 | EVD-003     | Suspicious email subject        | Identified        |
 | EVD-004     | Suspicious verification URL     | Identified        |
 | EVD-005     | Original email headers          | Not yet obtained  |
-|| Evidence ID | Evidence Description         | Status                                                                       
-| ----------- | ---------------------------- | ---------------------------------------------------------------------------- |
 | EVD-006     | SPF authentication results   | Not verified for original phishing email; PASS in separate training exercise |
 | EVD-007     | DKIM authentication results  | Not verified for original phishing email; PASS in separate training exercise |
 | EVD-008     | DMARC authentication results | Not verified for original phishing email; PASS in separate training exercise |
