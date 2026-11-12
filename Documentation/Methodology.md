@@ -20,7 +20,7 @@ Particular attention was given to:
 
 ### Step 2: Sender Analysis
 
-The sender's email address and domain were examined for inconsistencies and possible impersonation.
+The sender address and domain displayed in the supplied email sample were examined for inconsistencies and possible impersonation. No independent email-header verification was performed.
 
 The investigation identified:
 
@@ -35,7 +35,7 @@ The verification link supplied in the email was examined to identify possible do
 
 The observed URL was:
 
-micros0ft-security.example/verify
+https://micros0ft-security.example/verify
 
 The domain resembles Microsoft's branding and requires further validation.
 
@@ -87,3 +87,4 @@ The methodology provided a structured approach to investigating a suspected phis
 It enabled the identification of suspicious characteristics, documentation of potential IOCs and development of appropriate incident response recommendations.
 
 Further technical validation would be necessary to establish the full nature and impact of the suspected incident.
+A separate Gmail email was also examined as an email authentication training exercise. SPF, DKIM and DMARC returned PASS. These results belong to the separate training email and must not be interpreted as authentication results for the original phishing sample.
