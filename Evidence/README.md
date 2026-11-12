@@ -21,6 +21,7 @@ It establishes an organised record of available evidence, outstanding technical 
 | EVD-009     | URL reputation analysis      | Not performed; simulated `.example` domain                                                                                       
 | EVD-010     | Reconstructed phishing email screenshots | Captured and uploaded; training reconstruction, not original email 
 | EVD-011     | Email authentication training screenshot | Captured and uploaded; separate training email, not original phishing email |
+| EVD-012     | URL investigation screenshot | Captured and uploaded; reconstructed analytical evidence |
 
 
 ## 3. Evidence Sources
@@ -30,6 +31,7 @@ The initial indicators were obtained from the phishing email sample supplied for
 The original raw email headers and independent technical validation results were not available at the time of documentation.
 
 A separate Gmail training email was examined using the Show Original feature. SPF, DKIM and DMARC returned PASS. These results are not associated with the original phishing email.
+A reconstructed URL investigation screenshot was created to document the suspicious URL, its structural indicators and investigation limitations. No live website was accessed.
 
 ## 4. Evidence Handling
 
