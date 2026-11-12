@@ -18,7 +18,7 @@
 
 ### A. Brand Impersonation
 
-The domain uses the number zero (0) instead of the letter o in Microsoft. This is a possible typosquatting technique intended to deceive recipients.
+The domain uses the number zero (0) instead of the letter 'o' in Microsoft. This resembles a typosquatting technique that could be used to deceive recipients. However, the domain's maliciousness has not been independently established.
 
 ### B. HTTPS Does Not Guarantee Legitimacy
 
@@ -43,5 +43,13 @@ However, the `.example` domain is reserved for documentation and training. This 
 
 ## 6. Conclusion
 
-The URL demonstrates characteristics commonly associated with phishing attempts. It should be treated as suspicious within this training scenario. Further investigation would be required to establish whether a real-world website is malicious.
+The URL contains characteristics consistent with a potential phishing attempt, including brand impersonation and a verification-themed path.
+
+However, the `.example` top-level domain is reserved for documentation and training. No live website inspection, DNS investigation, WHOIS lookup or reputation assessment was performed.
+
+The URL is therefore classified as a suspicious training indicator, not confirmed malicious infrastructure.
+
+**Investigation Classification:** Suspected Phishing
+**Validation Status:** Limited — Training Scenario
+
 
