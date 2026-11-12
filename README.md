@@ -8,6 +8,13 @@ The investigation focuses on identifying email-based threats, examining suspicio
 
 This is a controlled cybersecurity training exercise designed to demonstrate fundamental SOC investigation and analytical skills.
 
+## Project Structure
+
+- `Documentation/` – Investigation report, methodology and email authentication analysis.
+- `Analysis/` – URL investigation assessment.
+- `IOCs/` – Indicators of Compromise register.
+- `Evidence/` – Evidence inventory and reconstructed training screenshots.
+
 ## 2. Investigation Objectives
 
 * Identify potential phishing indicators in a suspicious email.
@@ -34,7 +41,7 @@ The SOC Analyst is required to investigate the email and determine whether it ex
 | Sender Domain      | micros0ft-security.com                                                                |
 | Subject            | URGENT: Your Microsoft 365 Account Will Be Suspended                                  |
 | Impersonated Brand | Microsoft                                                                             |
-| Suspicious URL     | micros0ft-security.example/verify                                                     |
+| Suspicious URL     | https://micros0ft-security.example/verify                                             |
 | Primary Concern    | Possible credential harvesting                                                        |
 
 ## 5. Investigation Methodology
@@ -42,7 +49,7 @@ The SOC Analyst is required to investigate the email and determine whether it ex
 The investigation covers the following areas:
 
 1. Sender and domain analysis.
-2. Email authentication assessment.
+2. 2. Email authentication training exercise (separate from the original phishing sample).
 3. Identification of brand impersonation.
 4. Suspicious URL examination.
 5. Identification of Indicators of Compromise.
@@ -57,6 +64,7 @@ The email exhibits several characteristics associated with phishing:
 * Character substitution in the domain name.
 * Urgent language intended to pressure the recipient.
 * A request to verify login credentials through a suspicious link.
+* The supplied URL uses the reserved .example domain and was treated as a training indicator. No live website inspection or reputation assessment was performed. The original phishing email's SPF, DKIM and DMARC results also remain unverified.
 
 These indicators suggest a potential credential-harvesting attempt.
 
