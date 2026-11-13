@@ -61,6 +61,7 @@ The investigation covers the following areas:
 7. Incident response recommendations.
 
 
+
 ## 6. Preliminary Findings
 
 The email exhibits several characteristics associated with phishing:
