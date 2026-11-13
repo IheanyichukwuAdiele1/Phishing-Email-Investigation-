@@ -48,10 +48,6 @@ The SOC Analyst is required to investigate the email and determine whether it ex
 
 The investigation covers the following areas:
 
-## 5. Investigation Methodology
-
-The investigation covers the following areas:
-
 1. Sender and domain analysis.
 2. Email authentication training exercise (separate from the original phishing sample).
 3. Identification of brand impersonation.
